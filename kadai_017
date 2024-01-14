@@ -1,0 +1,20 @@
+class Human:
+  def __init__(self, name, age):
+    self.name = name
+    self.age = age
+    
+  def check_adult(self):
+    if self.age >= 20:
+      print(f"{self.name}は、大人です。")
+    else:
+      print(f"{self.name}は、大人ではありません。")
+
+name1 = Human("侍太郎", 25)
+name2 = Human("侍花子", 22)
+name3 = Human("侍三郎", 20)
+name4 = Human("侍四郎", 18)
+
+name_list = [name1, name2, name3, name4]
+
+for name in name_list:
+    name.check_adult()
